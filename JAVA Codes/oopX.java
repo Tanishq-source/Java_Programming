@@ -1,0 +1,48 @@
+class Arithmetic
+{
+    public int iNo1;
+    public int iNo2;
+
+    public Arithmetic()
+    {
+        this.iNo1 = 0;
+        this.iNo2 = 0;
+
+    }
+    public Arithmetic(int i,int j)
+    {
+        this.iNo1 = i;
+        this.iNo2 = j;
+    }
+    
+    public int Addition()
+    {
+        int iAns = 0;
+        iAns = this.iNo1 + this.iNo2;
+        return iAns;
+    }
+
+    public int substraction()
+    {
+        int iAns = 0;
+        iAns = this.iNo1 - this.iNo2;
+        return iAns;
+    }
+}
+
+class oopX
+{
+    public static void main(String Arr[])
+    {
+      Arithmetic aobj1 = new Arithmetic(11,10);
+      int iRet = 0;
+
+      iRet = aobj1.Addition();
+      System.out.println("Addition is :"+iRet); // cout<<"Addition is :"<<iRet<<"\n";
+
+      iRet = aobj1.substraction();
+      System.out.println("Substraction is :"+iRet); // cout<<"Substraction is :"<<iRet<<"\n";  
+
+      aobj1 = null;
+    }
+}
